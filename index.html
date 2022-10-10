@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>FastDucky | StellarSphere</title>
+  <!-- <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
+      <div class="card col-md-4 text-center">
+        <div class="card-body">
+          <h4 class="card-title">Rubber Ducky Whiteglove</h4>
+          <hr class="hr" />
+          <h5>Please select the connection type:</h5>
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="optWifi" checked />
+                <label class="form-check-label" for="optWifi">Wi-Fi <i class="fas fa-wifi"></i></label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="optEthernet" />
+                <label class="form-check-label" for="optEthernet">Ethernet <i class="fas fa-ethernet"></i></label>
+              </div>
+            </div>
+          </div>
+          <!-- WiFi credentials -->
+          <div class="card bg-secondary text-white border border-dark" id="wifi-setup">
+            <div class="form-outline">
+              <div class="row d-flex align-items-center justify-content-center mb-1 mt-1">
+                <div class="col-md-4">
+                  Wi-Fi SSID
+                </div>
+                <div class="col-md-6">
+                  <input type="text" id="form16" class="form-control border-start bg-white" maxlength="32" placeholder=""/>
+                </div>
+              </div>
+              <div class="row d-flex align-items-center justify-content-center mb-1">
+                <div class="col-md-4">
+                  Wi-Fi Password (blank if none)
+                </div>
+                <div class="col-md-6">
+                  <input type="text" id="form16" class="form-control border-start bg-white" maxlength="32" placeholder=""/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="hr" />
+          <button type="button" class="btn btn-primary">Encode <i class="fas fa-keyboard"></i></button>
+          <button type="button" class="btn btn-primary">Download <i class="fas fa-download"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center text-lg-start bg-light text-muted fixed-bottom">
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      &copy; 2022 Isabella Gibson
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

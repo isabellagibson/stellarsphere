@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>StellarSphere</title>
+  <link rel="icon" href="/static/img/ducky.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <link rel="stylesheet" href="/static/css/mdb.min.css" />
+  <link rel="stylesheet" href="/static/css/index.css" />
+  <script type="text/javascript" src="/static/js/index.js"></script>
+</head>
+
+<body>
+  <table class="table table-bordered table-striped table-hover table-sm">
+    <thead class="table-light">
+      <tr>
+        {% for header in headers %}
+        <th scope="col">{{ header }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody class="table-group-divider table-divider-color">
+      {% for row in rows %}
+        <tr id="{{ row[0] }}">
+          {% for col in row %}
+          <th>{{ col }}</th>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <!-- <div class="container"> -->
+    <!-- <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
+    </div> -->
+  <!-- </div> -->
+  <footer class="text-center text-lg-start bg-light text-muted fixed-bottom">
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      &copy; 2022 Isabella Gibson
+    </div>
+  </footer>
+  <script type="text/javascript" src="/static/js/mdb.min.js"></script>
+</body>
+
+</html>

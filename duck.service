@@ -1,0 +1,9 @@
+[Unit]
+Description=Backend for Rubber Ducky Whiteglove Automation
+
+[Service]
+WorkingDirectory=/home/isadmin/ducky
+ExecStart="/home/isadmin/ducky/run.sh"
+
+[Install]
+WantedBy=multi-user.target

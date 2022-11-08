@@ -1,0 +1,2 @@
+Open Wifi: STS-Test
+Secured Wi-Fi: STS-Staff:staffwifi
